@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            border: 3px solid black;
+        }
+        @media screen and (min-width : 300px){
+            .box{
+                background-color: palevioletred;
+            }            
+        }
+        .box1{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            border: 3px solid black;
+            margin: 5px;
+        }
+        @media screen and (max-width : 300px){
+            .box1{
+                background-color: green
+            }            
+        }
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            border: 3px solid black;
+            margin: 5px;
+        }
+        @media screen and (min-width : 250px) and (max-width : 400px){
+            .box2{
+                background-color: orange
+            }            
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>
