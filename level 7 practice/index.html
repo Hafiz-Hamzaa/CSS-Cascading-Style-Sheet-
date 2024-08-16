@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 7 Practice</title>
+    <style>
+        .btn{
+            height: 20px;
+            width: 100px;
+            border: 1px solid blue;
+            background-color: aliceblue;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .btn:hover{
+            background-color: palevioletred;
+            font-size: 15px;
+            width: 120px;
+        }
+        .btn:active{
+            background-color: blueviolet;
+            width: 150px;
+        }
+        .tran{
+            height: 70px;
+            width: 70px;
+            background-color: antiquewhite;
+            text-align: center;
+            border: 2px solid palevioletred;
+            position: relative;
+            top: 10px;
+            left: 15px;
+            /* transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;
+            transition-delay: 2s; */
+            transition: all 2s ease-in-out ;
+        }
+        .tran:hover{
+            background-color: aquamarine;
+            height: 90px;
+            width: 90px;
+        }
+        .trans{
+            height: 100px;
+            width: 100px;
+            background-color: palegoldenrod;
+            position: relative;
+            top: 20px;
+            left: 15px;
+            border: 2px solid palevioletred;
+            text-align: center;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+        }
+        .trans:hover{
+            transform: skewy(45deg);
+        }
+        .animation{
+            height: 75px;
+            width: 75px;
+            background-color: aqua;
+            position: relative;
+            top: 30px;
+            left: 25px;
+            border: 2px solid goldenrod;
+            animation-name: moving;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 2;
+            animation-direction:alternate
+        }
+        @keyframes moving{
+            from{
+            left: 10px;
+            }
+            20%{
+                left:50px
+            }
+            60%{
+                left: 60px;
+            }
+            to{
+            left: 200px;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="btn">Click me</div>
+    <div class="tran">Transition</div>
+    <div class="trans">Transform</div>
+    <div class="animation">Animation</div>
+</body>
+</html>
