@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 6 Practice Question</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        nav a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            padding-top: 5px;
+            height: 25px;
+        }
+        header{
+            background-color: black;
+        }
+        #divitem{
+            width: 100px;
+            height:100px;
+            margin: 5px;
+            position: relative;
+            top: 10px;
+            left: 20px;
+            background-color: green;
+        }
+        @media screen and (min-width:300px) and (max-width:400px) {
+            #divitem{
+                background-color:red
+            }
+        }
+        img{
+            height: 200px;
+        }
+        .image_container{
+            height: 250px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: plum;
+        }
+        .box{
+            height: 75px;
+            width: 75px;
+            background-color: blueviolet;
+            margin: 3px;
+            flex-shrink: 0;
+            
+        }
+        .box_container{
+            border: 2px solid red;
+            height: 80px;
+            width: 400px;
+            display: flex;
+            justify-content: space-around;
+        }    
+        #two{
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+    </nav>
+    </header>
+    <main>
+    <div id="divitem"></div>
+    <br>
+    <div class="image_container">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.IBUCcy8iqYCyP1NLBOTepwHaEo&pid=Api&P=0&h=220" alt="Water Falling">
+    </div>
+    <br>
+    <div class="box_container">
+        <div id="one" class="box">Box 1</div>
+        <div id="two" class="box">Box 2</div>
+        <div id="three" class="box">Box 3</div>
+    </div>
+    </main>
+
+</body>
+</html>
